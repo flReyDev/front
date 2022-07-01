@@ -1,0 +1,17 @@
+
+body{
+    color: darkslategray;
+}
+
+dialog{
+    border: none;
+    border-radius: 5px solid;
+}
+
+dialog>button{
+    padding: 0.5em 1em 0.5em 0.5em;
+    border: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: tomato;
+    color: aliceblue;
+}

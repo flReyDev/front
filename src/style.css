@@ -1,0 +1,16 @@
+@font-face {
+  font-family: Decker;
+  src: url("./fonts/Decker.ttf");
+  font-style: normal;
+  font-weight: normal;
+}
+
+*{
+  font-family: 'Decker';
+}
+
+
+#img-config{
+  height: 100px;
+  width: 100px;
+}
