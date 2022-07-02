@@ -1,6 +1,6 @@
 
 body{
-    color: darkslategray;
+    color: rgb(255, 255, 255);
 }
 
 dialog{
@@ -11,7 +11,111 @@ dialog{
 dialog>button{
     padding: 0.5em 1em 0.5em 0.5em;
     border: none;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Decker';
     background-color: tomato;
     color: aliceblue;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+header{
+    display: flex;
+    background-color: #283747;
+    justify-content: space-around;
+    padding: 0.5rem 0;
+    align-items: center;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    height: 60px;
+    margin-right: 10px;
+}
+
+.nav_list{
+    display: flex;
+    align-items: center;
+}
+
+.nav_item{
+    margin: 0 8px;
+}
+.nav_link{
+    padding: 10px;
+    color: aliceblue;
+    font-size: 0.9rem;
+    font-weight: 500;
+    border-radius: 5px;
+}
+.nav_link:hover {
+    background-color: tomato;
+}
+.header_toogle, .header_close{
+    display: none;
+}
+.active{
+    background-color: tomato;
+}
+/* Media query */
+@media screen and (max-width: 768px){
+    header{
+        height: 48px;
+        justify-content: space-between;
+        padding: 0 28px;
+    }
+    .logo a {
+        font-size: 0.9rem;
+    }
+    .logo img {
+        width: 100px;
+    }
+    .header_toogle{
+        display: inline;
+        color: aliceblue;
+        font-size: 25px;
+        cursor: pointer;
+    }
+    .header_close{
+        position: absolute;
+        right: 24px;
+        display: block;
+        font-size: 25px;
+        border-radius: 50%;
+    }
+    .header_close:hover{
+        background-color: tomato;
+    }
+    .nav{
+        position: fixed;
+        top: 0;
+        right: -100%;
+        background-color: #283747;
+        color: aliceblue;
+        width: 40%;
+        height: 100vh;
+        padding: 25px;
+        z-index: 100;
+        transition: 0.5s;
+    }
+    .nav_list{
+        display: flex;
+        flex-direction: column;
+        top: 1em;
+    }
+    .nav_item{
+        margin: 1rem 0;
+    }
+    .show{
+        right: 0;
+    }
 }
